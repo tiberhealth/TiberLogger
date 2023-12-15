@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='tiber-logger',
+    name='tiberlogger',
     use_scm_version=True,  # Enable setuptools_scm for versioning
     setup_requires=['setuptools_scm'],  # Add setuptools_scm as a setup requirement
     packages=find_packages(),
