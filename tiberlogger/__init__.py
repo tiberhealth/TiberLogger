@@ -1,1 +1,1 @@
-from .logger import Logger, LogLevel
+from .display_logger import Logger, LogLevel
