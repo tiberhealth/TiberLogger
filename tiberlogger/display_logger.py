@@ -39,7 +39,7 @@ class Logger:
             display_level = " "
 
         current_time_string = datetime.utcnow().strftime("%m/%d/%Y %I:%M:%S %p Zulu")
-        if len(message.strip()) <= 0 and log_level == LogLevel.LOG_SYSTEM:
+        if (message is None or len(message.strip()) <= 0) and log_level == LogLevel.LOG_SYSTEM:
             current_time_string = " "
 
         print(f"{current_time_string:<22}\t{display_level:<10}\t{message}")
